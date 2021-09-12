@@ -39,9 +39,14 @@ public class Methods {
                 counterForA++;
             }
         }
-        System.out.println((float) counterForL * 100 / dbConnection.getvarroaTreatment().size() + " % of colonies treated with treatment skudrskābe");
-        System.out.println((float) counterForM * 100 / dbConnection.getvarroaTreatment().size() + " % of colonies treated with treatment skābeņskābe");
-        System.out.println((float) counterForA * 100 / dbConnection.getvarroaTreatment().size() + " % of colonies treated with treatment HiveClean");
+        float percentsForSkudruskabe = (float) counterForL * 100 / dbConnection.getvarroaTreatment().size();
+        float percentsForSkabenskabe = (float) counterForM * 100 / dbConnection.getvarroaTreatment().size();
+        float  percentsForHiveClean =(float) counterForA * 100 / dbConnection.getvarroaTreatment().size();
+
+        System.out.println((String.format("%.2f ",percentsForSkudruskabe))+ "% of colonies treated with treatment skudrskābe");
+        System.out.println((String.format("%.2f",percentsForSkabenskabe))+" % of colonies treated with treatment skābeņskābe");
+        System.out.println((String.format("%.2f",percentsForHiveClean))+" % of colonies treated with treatment HiveClean");
+//
     }
 
     // PRINT OUT INFORMATION ABOUT COLONIES
