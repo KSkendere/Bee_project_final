@@ -91,7 +91,7 @@ public class Colony {
         System.out.println("Please enter the amount of honey: ");
         colony.setKgHoney(methods.validatorForIntegers(scanner));
         System.out.println("Please enter the number of pollen frames: ");
-        colony.setKgHoney(methods.validatorForIntegers(scanner));
+        colony.setPollen(methods.validatorForIntegers(scanner));
         int selectedVarroaTreatment;
         do {
             System.out.println("Please enter the varroa treatment: ");
